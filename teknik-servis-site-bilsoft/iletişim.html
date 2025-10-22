@@ -1,0 +1,244 @@
+<!DOCTYPE html> <!-- Tarayıcıya bu belgenin bir HTML5 belgesi olduğunu bildirir -->
+<html lang="tr"> <!-- Sayfanın dilinin Türkçe olduğunu belirtir -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Türkçe karakterlerin doğru görüntülenmesini sağlar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobil uyumluluk sağlar -->
+    <meta name="description" content="Teknik servis süreçlerini kolaylaştıran Bilsoft Online Servis Programı, bulut tabanlı yapısıyla her yerden erişilebilir, ön muhasebe ve müşteri takibiyle entegre çalışır."> <!-- SEO açıklaması -->
+
+    <!-- Favicon (tarayıcı sekmesinde görünen küçük simge) -->
+    <link rel="icon" href="images/icon.png" type="images/icon.png">
+
+    <title>Teknik Servis Programı</title> <!-- Tarayıcı sekmesinde görünen başlık -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Outfit Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome İkonlar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Özel stil dosyan -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/bilsoft_logo_düncel.png" alt="Logo" height="55">
+            </a>
+
+            <!-- Mobil görünümde açılır menü butonu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menü linkleri -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="özellikler.html">Özellikler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletişim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+                    </li>
+                </ul>
+
+                
+                <!-- Sağda yer alan butonlar -->
+                <div class="button-container">
+                    <a href="BilsoftTeknikServisSetup.exe" download class="btn btn-primary" title="Demo Kullan">Programı İndir</a>
+                    <a href="https://www.bilsoft.com/teknik-servis-odeme.aspx" target="_blank" class="btn btn-outline-primary" title="Satın Al">Şimdi Satın Al</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   <!-- İletişim Bölümü -->
+<section class="container py-5 mt-5">
+
+    <!-- Başlık -->
+    <h2 class="text-center mb-5 fw-semibold" style="color: #122851; font-size: 2rem;">
+        Bizimle İletişime Geçin!
+    </h2>
+
+    <div class="row justify-content-center align-items-start gx-5">
+
+        <!-- İletişim Formu -->
+        <div class="col-lg-5 col-md-10 mb-4" data-aos="fade-right">
+            <form action="https://formspree.io/f/xpwlqnyd" method="POST">
+                <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="İsminiz" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" name="subject" class="form-control" placeholder="Konu" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Mesaj" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">MESAJ GÖNDER</button>
+            </form>
+        </div>
+
+        <!-- İletişim Bilgileri -->
+        <div class="col-lg-5 col-md-10 mb-4" data-aos="fade-left">
+            <div class="text-start" style="max-width: 400px; margin: auto;">
+                <h4 class="fw-semibold mb-3" style="color: #122851;">İletişim Bilgilerimiz:</h4>
+                <p class="mb-2" style="color: #122851;">
+                    <strong>Telefon:</strong>
+                    <a href="tel:+902129122426" class="text-decoration-none" style="color: #122851;">0212 912 24 26</a>
+                </p>
+                <p class="mb-2" style="color: #122851;">
+                    <strong>E-mail:</strong>
+                    <a href="mailto:bilgi@bilsoft.com" class="text-decoration-none" style="color: #122851;">bilgi@bilsoft.com</a>
+                </p>
+                <p class="mb-3" style="color: #122851;">
+                    <strong>Faks:</strong> 0212 912 24 27
+                </p>
+
+                <h4 class="fw-semibold mt-4 mb-2" style="color: #122851;">Adreslerimiz:</h4>
+                <ul class="list-unstyled" style="color: #122851;">
+                    <li>
+                        <a href="https://maps.app.goo.gl/JbASh7CeheMEqwQM9" target="_blank" class="text-decoration-none" style="color: #122851;">
+                            📍 Bilsoft Genel Müdürlük (İstanbul)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/jXLQi1tV9RysHu3B9" target="_blank" class="text-decoration-none" style="color: #122851;">
+                            📍 Bilsoft Yapay Zeka Ofisi (İstanbul)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/Ca9MjPkBuriDuhFS7" target="_blank" class="text-decoration-none" style="color: #122851;">
+                            📍 Bilsoft Yazılım Operasyon Merkezi (Düzce)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/d7Fk8JonDNph4nsr7" target="_blank" class="text-decoration-none" style="color: #122851;">
+                            📍 Bilsoft AR-GE Merkezi (Düzce)
+                        </a>
+                    </li>
+                </ul>
+
+                <h4 class="fw-semibold mt-4 mb-2" style="color: #122851;">Sosyal Medya:</h4>
+                <div class="d-flex gap-3 mt-2">
+                    <a href="https://x.com/bilsoftyzlm" target="_blank" style="color:#122851; font-size: 1.5rem;">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="http://facebook.com/BilsoftYazilim/" target="_blank" style="color:#122851; font-size: 1.5rem;">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bilsoftyazilim/" target="_blank" style="color:#122851; font-size: 1.5rem;">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://tr.linkedin.com/company/bilsoftyazilim" target="_blank" style="color:#122851; font-size: 1.5rem;">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Harita Alanı -->
+    <div class="mt-5" data-aos="fade-up" data-aos-delay="300">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YW167Uffzd327CaZ2niZAV7HlTSiWMk&ehbc=2E312F&noprof=1"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+</section>
+
+
+   
+<!--Footer Kodları-->
+  <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Bilsoft Tanıtım + Sosyal Medya -->
+      <div class="footer-column">
+        <h3>Bilsoft Bulut Teknik Servis</h3>
+        <p>
+          Bulut Teknik Servis hizmeti veren firmaların gereksinimlerini karşılayabilecek düzeyde geliştirilmiş,
+          servis kayıtlarını ve opsiyonel olarak işletme muhasebenizi de tutabileceğiniz bulut/internet tabanlı bir programdır.
+        </p>
+        <div class="social-icons">
+          <a href="https://x.com/bilsoftyzlm" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i> <!--İkonları yukarıda tanımladığımız "Font Awesome İkonlar"ından çektik-->
+          </a>
+          <a href="http://facebook.com/BilsoftYazilim/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/bilsoftyazilim/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://tr.linkedin.com/company/bilsoftyazilim" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+
+     <!-- Özellikler -->
+    <div class="footer-column">
+      <h3>Sayfalar</h3>
+      <ul>
+       <li> <a href="index.html">Anasayfa</a></li>
+       <li> <a href="özellikler.html">Özellikler</a></li>
+       <li> <a href="iletişim.html">İletişim</a></li>
+       <li> <a href="hakkımızda.html">Hakkımızda</a></li>
+    </ul>
+    </div>
+
+      
+      <!-- İletişim -->
+      <div class="footer-column">
+        <h3>İletişim</h3>
+        <p>Hafta İçi<br>09:00 - 17:30</p>
+        <p>Cumartesi<br>09:00 - 16:30</p>
+        <p>
+          <a href="tel:02129122426" style="text-decoration: none; color: inherit;">
+            <i class="fa-solid fa-phone"></i> <strong>(0212) 912 24 26</strong> <!--İkonu yukarıda tanımladığımız "Font Awesome İkonlar"ından çektik-->
+          </a>
+        </p>
+
+      </div>
+    
+
+    </div>
+  </footer>
+
+<!-- Yukarı Çık Butonu --> <!--Sayfa aşağı doğru inince ortaya çıkan minik ok -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Yukarı Çık">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<script src="js/app.js"></script>
+</body>
+</html>

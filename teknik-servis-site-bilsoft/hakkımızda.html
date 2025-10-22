@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bilsoft Online Teknik Servis Programı, teknik servis süreçlerini kolaylaştıran, bulut tabanlı, kullanıcı dostu yazılım çözümüdür.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/icon.png" type="images/icon.png">
+
+  <title>Teknik Servis Programı | Bilsoft</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Outfit Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/özellikler.css">
+
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/bilsoft_logo_düncel.png" alt="Bilsoft Logo" height="55">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Anasayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="özellikler.html">Özellikler</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletişim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkımızda</a></li>
+        </ul>
+
+        <div class="button-container ms-2">
+          <a href="BilsoftTeknikServisSetup.exe" download class="btn btn-primary" title="Demo Kullan">Programı İndir</a>
+          <a href="https://www.bilsoft.com/teknik-servis-odeme.aspx" target="_blank" class="btn btn-outline-primary" title="Satın Al">Şimdi Satın Al</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- === Hakkımızda Section Başlangıç === -->
+
+<!-- Ana Sayfa Büyük Başlık -->
+<section class="hero-section text-center py-3"> <!-- py-5 yerine py-3 ile boşluğu azalttık -->
+  <div class="container">
+    <h1 class="fw-bold mb-3" style="font-size: 2.5rem; color: #023E8A;">
+      Bilsoft ile İşinizi Hızlandırın, Geleceğe Hazırlanın!
+    </h1>
+  </div>
+</section>
+
+<!-- YouTube Video ve Butonlar Alanı -->
+<section class="container py-4 mt-3"> <!-- py-5 yerine py-4, mt-4 yerine mt-3 -->
+  <div class="row align-items-center g-3"> <!-- g-3 ekleyerek elemanlar arası fazla boşluğu düzenledik -->
+
+    <!-- Görsel Alanı -->
+    <div class="col-lg-6 mb-3 mb-lg-0 text-center">
+      <img src="images/bulut_teknik_servis.png" alt="Bilsoft Hakkımızda" class="img-fluid rounded shadow" style="max-width: 65%; margin-top: 0;">
+
+      <!-- Butonlar -->
+      <div class="d-flex justify-content-center align-items-center gap-3 mt-2">
+        <!-- Tanıtım Videomuz Butonu -->
+        <button 
+          type="button" 
+          class="btn btn-light d-flex align-items-center gap-2 rounded-pill shadow-sm px-3"
+          data-bs-toggle="modal" 
+          data-bs-target="#bilsoftVideoModal"
+          onclick="playBilsoftVideo()"
+          title="Tanıtım Videomuzu İzle"
+        >
+          <i class="fa-solid fa-play text-primary"></i>
+          Tanıtım Videomuz
+        </button>
+      </div>
+    </div>
+
+    <!-- Yazı Alanı -->
+    <div class="col-lg-6">
+      <h3 class="fw-semibold mb-2" style="color: #122851; font-size: 1.5rem;">Biz Kimiz?</h3>
+      <p style="text-align: justify;">
+        Bilsoft, 2005 yılından bu yana geliştirdiği muhasebe yazılımlarıyla, Türkiye genelinde binlerce KOBİ’nin dijital dönüşüm yolculuğuna eşlik eden öncü bir teknoloji markasıdır.
+      </p>
+      <p style="text-align: justify;">
+        Sahip olduğumuz teknik bilgi birikimi ve sektörel deneyimle; yalnızca yazılım değil, güvenilir bir iş ortağı olmayı ve sürdürülebilir dijital çözümler sunmayı hedefliyoruz. Kullanıcı dostu arayüzlerimiz, muhasebe bilgisi olmayan işletmeler için bile erişilebilir çözümler sunar. Hafta sonları ve resmi tatiller dahil olmak üzere 365 gün teknik destek sağlayarak müşterilerimizin yanında yer alıyoruz.
+      </p>
+      <p style="text-align: justify;">
+        Geliştirdiğimiz yazılımlar e-Fatura, e-Arşiv, e-İrsaliye, personel takip, pazar yeri entegrasyonu ve teknik servis yönetimi gibi birçok alanda işletmelerin tüm ihtiyaçlarını karşılamayı hedeflemektedir. Yerli ve milli yazılım altyapımız ile işletmelerin her yerden cihaz bağımsız şekilde süreçlerini yönetmelerine olanak sağlıyoruz.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal YouTube Video -->
+<div class="modal fade" id="bilsoftVideoModal" tabindex="-1" aria-labelledby="bilsoftVideoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe 
+            id="bilsoftVideoIframe"
+            src=""
+            title="Bilsoft Tanıtım Filmi"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Yazılar Alanı -->
+<div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
+
+  <h3 class="intro-title mb-3">Bulut Teknik Servis Nedir?</h3>
+  <p class="intro-description">
+    Bulut Teknik Servis, teknik servis hizmeti veren işletmelerin cihaz kabulünden arıza takibine, onarım sürecinden yedek parça yönetimine kadar tüm süreçlerini dijital ortamda kolayca yönetmelerini sağlayan modern bir yazılım çözümüdür.
+  </p>
+  <p class="intro-description">
+    İş yükünü azaltarak hata oranını en aza indiren bu sistem sayesinde servis firmaları, müşterilerine daha şeffaf ve hızlı hizmet sunabilir. Web tabanlı yapısı sayesinde masaüstü ve mobil cihazlardan her yerden erişilebilir, böylece teknik servis süreçleri zamandan ve maliyetten tasarruf ederek daha verimli bir şekilde yönetilebilir.
+  </p>
+
+  <h3 class="intro-title mt-4 mb-3">Bilsoft Bulut Teknik Servis</h3>
+  <p class="intro-description">
+    Bilsoft Bulut Teknik Servis, Bilsoft’un yazılım geliştirme tecrübesi ve müşteri odaklı yaklaşımıyla hazırlanan, teknik servis süreçlerinin dijitalleşmesini kolaylaştıran yenilikçi bir yazılımdır.
+  </p>
+  <p class="intro-description">
+    Kullanıcı dostu arayüzü sayesinde teknik bilgi gerektirmeden rahatlıkla kullanılabilen bu çözüm, servis süreçlerinin düzenli, hızlı ve takip edilebilir şekilde ilerlemesini sağlar. Bilsoft’un güçlü destek hizmeti ve sürdürülebilir yazılım yapısı sayesinde işletmeler, teknik servis süreçlerinde güvenilir bir iş ortağı ile çalışmanın avantajını yaşar.
+  </p>
+
+</div>
+
+<!-- Vizyon ve Misyon Section -->
+<section class="container my-5">
+  <div class="row g-4">
+
+    <!-- Vizyon -->
+    <div class="col-md-6">
+      <div class="vision-mission-box h-100 p-4 rounded shadow">
+        <h3 class="fw-semibold mb-3 text-center">Vizyonumuz</h3>
+        <p style="text-align: justify;"> Bilsoft Yazılım olarak, küçük ve orta ölçekli işletmelerin dijitalleşmesini kolaylaştırmayı, teknolojiyi herkes için erişilebilir hale getirmeyi ve iş süreçlerini verimli bir şekilde yönetmelerini sağlamayı hedefliyoruz.
+
+Kullanıcı dostu yazılımlarımız ve sürekli destek hizmetlerimizle, müşterilerimizin hem bugünkü ihtiyaçlarını karşılıyor hem de gelecekteki büyüme hedeflerine ulaşmalarına yardımcı oluyoruz.
+
+Amacımız, müşterilerimizin dijital dönüşüm yolculuklarında güvenilir bir çözüm ortağı olmak, sektördeki yeniliklere öncülük etmek ve teknolojiyi anlaşılır kılmaktır. Bizim için başarı, müşterilerimize zaman kazandırmak ve onların büyümesine katkıda bulunmaktır. </p>
+        <p style="text-align: justify;">
+          Mobil uyumluluk, bulut teknolojileri ve yapay zeka gibi yeni nesil yazılımlarla sektöre öncülük ederek, teknolojik gelişmeleri yakından takip eden güçlü bir marka olmayı amaçlıyoruz.
+        </p>
+      </div>
+    </div>
+
+    <!-- Misyon -->
+    <div class="col-md-6">
+      <div class="vision-mission-box h-100 p-4 rounded shadow">
+        <h3 class="fw-semibold mb-3 text-center">Misyonumuz</h3>
+        <p style="text-align: justify;">
+          Teknik servis hizmeti sunan işletmelerin cihaz kabulünden arıza tespitine, onarım sürecinden parça yönetimine ve müşteri bilgilendirmeye kadar tüm süreçlerini dijital ortamda kolayca yönetebilmelerini sağlıyoruz. Hata payını en aza indiren, iş yükünü hafifleten ve müşteri memnuniyetini artıran fonksiyonel araçlar geliştirerek sektörde verimliliği artırmayı hedefliyoruz.
+        </p>
+        <p style="text-align: justify;">
+          Basit ama güçlü bir arayüzle, her seviyeden kullanıcının teknik bilgiye ihtiyaç duymadan sistemi rahatlıkla kullanabilmesine imkan tanıyoruz. Hafta sonları ve resmi tatiller dahil kesintisiz destek sunarak, müşterilerimizin yanında yalnızca bir yazılım sağlayıcısı olarak değil, güvenilir bir iş ortağı olarak yer alıyoruz.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- === Bilsoft Gelişim Süreci Slider Başlangıç === -->
+<section class="container py-5 mt-5">
+  <h3 class="text-center mb-4 fw-semibold" style="color: #122851; font-size: 1.8rem;">
+    Bilsoft'un Gelişim Yolculuğu
+  </h3>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2024</div>
+        <p>Programlara çoklu dil ve para birimi desteği eklendi.</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2020</div>
+        <p>Bilsoft Ön Muhasebe Programları uluslararası platformda işletmelere yenilikçi çözümler sunmaya başladı.</p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2017</div>
+        <p>Teknik servis programı geliştirildi ve kullanıcılara sunuldu.</p>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2015</div>
+        <p>Online Bulut Ön Muhasebe Programı kullanıcılarla buluştu.</p>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2014</div>
+        <p>Elektronik fatura sisteminin zorunlu hale gelmesiyle birlikte e-Fatura özelliği programlara entegre edildi.</p>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2013</div>
+        <p>Düzce Teknopark yerleşkesinde AR-GE faaliyetlerine başlandı.</p>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2009</div>
+        <p>Tüm sektörlere yönelik Bilsoft Cari Hesap Takip Programı, ücretsiz olarak kullanıcılara sunuldu.</p>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2007</div>
+        <p>Profesyonel hizmet hedefiyle kurumsallaşarak limited şirket statüsüne geçti.</p>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="swiper-slide bilsoft-slider-card">
+        <div class="bilsoft-slider-year">2005</div>
+        <p>Bilsoft Yazılım kuruldu.</p>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-prev slider-arrow">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="swiper-button-next slider-arrow">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+</section>
+<!-- === Bilsoft Gelişim Süreci Slider Bitiş === -->
+
+<!-- === Kullanıcı Yorumları Slider Başlangıç === -->
+<section class="container py-5">
+  <h3 class="text-center mb-4 fw-semibold" style="color: #122851; font-size: 1.8rem;">
+    Online Bulut Servis Programı Kullanıcı Yorumları
+  </h3>
+
+  <div class="swiper user-comments-slider">
+    <div class="swiper-wrapper">
+
+      <!-- Yorum 1 -->
+      <div class="swiper-slide user-comment-card p-4 rounded shadow">
+        <p>"Kayıt oluştururken imei, cihaz modeli, yapılan işlem gibi detaylan tek ekrandan giriyoruz. Müşterilere otomatik SMS ile bilgilendirme gitmesi bizi çok profesyonel gösteriyor. Servis geçmişi de kayıtlı kaldığı için tekrar gelen müşteriye kolayca hizmet verebiliyoruz."</p>
+        <div class="d-flex align-items-center mt-3">
+          <div>
+            <strong>Buğra K.</strong><br>
+            <span class="text-warning">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yorum 2 -->
+      <div class="swiper-slide user-comment-card p-4 rounded shadow">
+        <p>"Günlük onlarca servis kaydı alıyoruz ve eskiden her şeyi defterle takip ediyorduk. Bilsoft'un online teknik servis programı sayesinde artık müşteri kaydından, servis durumuna, parça değişimine kadar her şey dijital. Hangi teknisyenin nerede olduğu bile sistemden takip..."</p>
+        <div class="d-flex align-items-center mt-3">
+          <div>
+            <strong>Mustafa Y.</strong><br>
+            <span class="text-warning">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yorum 3 -->
+      <div class="swiper-slide user-comment-card p-4 rounded shadow">
+        <p>"Araç girişlerini kayıt altına almak, yapılan işlemleri belgelemek artık çok kolay. Bilsoft'un online servis programı ile servis fişi kesiyoruz, müşteriye işlem bilgisi ve maliyet otomatik ulaşıyor. Aynı araç tekrar geldiğinde geçmiş işlemler ekranda. Esnaflık dijitalleşti resmen!"</p>
+        <div class="d-flex align-items-center mt-3">
+          <div>
+            <strong>Ali Rıza Ş.</strong><br>
+            <span class="text-warning">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yorum 4 -->
+      <div class="swiper-slide user-comment-card p-4 rounded shadow">
+        <p>"Kurumsal müşterilere yerinde bakım hizmeti veriyoruz. Bilsoft'un servis yazılımı ile çağırı kaydı oluşturma, teknisyen atama ve işlem sonrası raporlama süreci çok hızlı ilerliyor. Ayrıca sistem bulut tabanlı olduğu için saha ekibimiz de mobil cihazlarından süreci yönetebiliyor."</p>
+        <div class="d-flex align-items-center mt-3">
+          <div>
+            <strong>Serkan A.</strong><br>
+            <span class="text-warning">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yorum 5 -->
+      <div class="swiper-slide user-comment-card p-4 rounded shadow">
+        <p>"Arızalı ürün geldiğinde seri numarasını giriyoruz, hangi müşteriden geldi, ne zaman teslim edildi hepsi kayıt altina alınıyor. Teknisyenler işlem durumunu güncelliyor, biz de anli takip edebiliyoruz. Bilsoft'un bu servisi sayesinde hem iş yükümüz azaldı hem müşteri memnuniyeti arttı."</p>
+        <div class="d-flex align-items-center mt-3">
+          <div>
+            <strong>Ahmet K.</strong><br>
+            <span class="text-warning">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigasyon Okları -->
+    <div class="swiper-button-prev slider-arrow">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="swiper-button-next slider-arrow">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+</section>
+<!-- === Kullanıcı Yorumları Slider Bitiş === -->
+
+<!-- === Footer Başlangıç === -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Bilsoft Tanıtım + Sosyal Medya -->
+    <div class="footer-column">
+      <h3>Bilsoft Bulut Teknik Servis</h3>
+      <p>
+        Bulut Teknik Servis hizmeti veren firmaların gereksinimlerini karşılayabilecek düzeyde geliştirilmiş,
+        servis kayıtlarını ve opsiyonel olarak işletme muhasebenizi de tutabileceğiniz bulut/internet tabanlı bir programdır.
+      </p>
+      <div class="social-icons">
+        <a href="https://x.com/bilsoftyzlm" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="http://facebook.com/BilsoftYazilim/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bilsoftyazilim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tr.linkedin.com/company/bilsoftyazilim" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Sayfalar -->
+    <div class="footer-column">
+      <h3>Sayfalar</h3>
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="özellikler.html">Özellikler</a></li>
+        <li><a href="iletişim.html">İletişim</a></li>
+        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+      </ul>
+    </div>
+
+    <!-- İletişim -->
+    <div class="footer-column">
+      <h3>İletişim</h3>
+      <p>Hafta İçi<br>09:00 - 17:30</p>
+      <p>Cumartesi<br>09:00 - 16:30</p>
+      <p>
+        <a href="tel:02129122426" style="text-decoration: none; color: inherit;">
+          <i class="fa-solid fa-phone"></i> <strong>(0212) 912 24 26</strong>
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+<!-- === Footer Bitiş === -->
+
+<!-- === Yukarı Çık Butonu === -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Yukarı Çık">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- === JS Kütüphaneleri ve Scriptler === -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- AOS Animasyonları -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+<!-- SwiperJS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Ana Swiper -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    }
+  });
+</script>
+
+
+<!-- Bilsoft Video Modal -->
+<script>
+  function playBilsoftVideo() {
+    const iframe = document.getElementById('bilsoftVideoIframe');
+    iframe.src = "https://www.youtube.com/embed/X9dhgBvcMo0?autoplay=1";
+  }
+
+  const videoModal = document.getElementById('bilsoftVideoModal');
+  videoModal.addEventListener('hidden.bs.modal', function () {
+    const iframe = document.getElementById('bilsoftVideoIframe');
+    iframe.src = "";
+  });
+</script>
+
+<!-- Kullanıcı Yorumları Swiper -->
+<script>
+  var userCommentsSwiper = new Swiper(".user-comments-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true, 
+    navigation: {
+      nextEl: ".user-comments-slider .swiper-button-next",
+      prevEl: ".user-comments-slider .swiper-button-prev",
+    },
+    pagination: {
+      el: ".user-comments-slider .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    }
+  });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html> <!-- Tarayıcıya bu belgenin bir HTML5 belgesi olduğunu bildirir -->
+<html lang="tr"> <!-- Türkçe içerik kullanılacağını belirtir -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Türkçe karakterlerin doğru görüntülenmesini sağlar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Mobil uyumluluk sağlar -->
+  <meta name="description" content="Teknik servis süreçlerini kolaylaştıran Bilsoft Online Servis Programı, bulut tabanlı yapısıyla her yerden erişilebilir, ön muhasebe ve müşteri takibiyle entegre çalışır.">
+  
+  <!-- 🔹 Favicon --><!-- Tarayıcıda gözüken logo -->
+  <link rel="icon" href="images/icon.png" type="images/icon.png">
+  
+  <title>Teknik Servis Programı</title> <!-- Tarayıcının sekmesinde görünen sayfa başlığını belirler -->
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap 5.3.2 sürümünün CSS dosyasını internetten çağırarak stil özelliklerini sayfaya ekler -->
+
+  <!-- Outfit Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome İkonlar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Kendi css dosyam -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif; 
+    } 
+  </style>
+</head>
+
+<body>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"> <!-- Bootstrap ile tanımlanmış üst navigasyon çubuğunu (navbar) oluşturur -->
+  <div class="container">                                                       <!-- navbar-expand-lg: Menü büyük ekranlarda yatay görünür, küçük ekranlarda "hamburger menü" olur-->
+                                                                                <!-- navbar-light bg-light: Menü açık renkli olsun -->
+    
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/bilsoft_logo_düncel.png" alt="Logo" height="55">
+    </a>
+    <!-- Menü butonu (mobil görünüm için) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menü içerikleri -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="özellikler.html">Özellikler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletişim.html">İletişim</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+        </li>
+      </ul>
+
+
+    <!-- Sağdaki butonlar -->
+    <div class="button-container">
+    <a href="BilsoftTeknikServisSetup.exe" download class="btn btn-primary" title="Demo Kullan">Programı İndir</a>
+    <a href="https://www.bilsoft.com/teknik-servis-odeme.aspx" target="_blank" class="btn btn-outline-primary" title="Satın Al">Şimdi Satın Al</a>
+    </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Slider start -->
+<div class="splitview skewed">
+    <div class="panel bottom">
+        <div class="handle"></div>
+        <div class="content">
+            <img src="images/Slider panel fotoğrafı 2.png" alt="onlineteknikservis" title="Ön Muhasebe ile Entegre">
+        </div>
+    </div>
+    <div class="panel top">
+        <div class="content">
+            <img src="images/Slider panal fotoğrafı güncel.png" alt="onlineteknikservis" title="İnternet Olan Her Yerde">
+        </div>
+    </div>
+</div>
+
+<!-- Slider end -->
+
+
+<section class="features-section">
+  <div class="feature-box" data-aos="zoom-in" data-aos-delay="100" > <!-- " "data-aos="zoom-in" data-aos-delay="100" " hareketli animasyon için eklendi --> 
+    <img src="images/Bulut_tabanlı_erişim.png" alt="Bulut Tabanlı Erişim" class="feature-icon">
+    <h3 class="feature-title">BULUT TABANLI ERİŞİM</h3>
+    <p class="feature-desc">
+      Online Teknik Servis Programı; bilgisayar, tablet ya da cep telefonundan kolayca erişilebilir. Bulut/internet tabanlı yapısı sayesinde her an, her yerden işlemlerinizi yönetebilirsiniz.
+    </p>
+  </div>
+
+  <div class="feature-box" data-aos="zoom-in" data-aos-delay="100" > <!-- " "data-aos="zoom-in" data-aos-delay="100" " hareketli animasyon için eklendi --> 
+    <img src="images/geniş_servis_takip_sistemi.png" alt="Geniş Servis Tekip Sistemi" class="feature-icon">
+    <h3 class="feature-title">GENİŞ SERVİS TAKİP SİSTEMİ</h3>
+    <p class="feature-desc">
+      Onarım, teslimat, iptal ve fiyatlandırma dahil olmak üzere tüm teknik servis süreçlerini tek ekrandan hızlıca takip etmenizi sağlar. Zaman tasarrufu sunar, iş yükünüzü azaltır.
+    </p>
+  </div>
+
+  <div class="feature-box" data-aos="zoom-in" data-aos-delay="100" > <!-- " "data-aos="zoom-in" data-aos-delay="100" " hareketli animasyon için eklendi --> 
+    <img src="images/detaylı_cihaz_kayırları.png" alt="DETAYLI CİHAZ KAYITLARI" class="feature-icon">
+    <h3 class="feature-title">DETAYLI CİHAZ KAYITLARI</h3>
+    <p class="feature-desc">
+      Marka, model, seri numarası, arızalı parça, garanti durumu ve işlem yapan personel gibi birçok detayı içeren kapsamlı servis kayıtları oluşturabilirsiniz.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="intro-section text-center py-5" data-aos="zoom-in" data-aos-delay="100" > <!-- " "data-aos="zoom-in" data-aos-delay="100" " hareketli animasyon için eklendi --> 
+  <div class="container">
+    <h2 class="intro-title mb-4">Bulut Teknik Servis Programı</h2>
+    <p class="intro-description">
+      Bilsoft Bulut Hibrit Teknik Servis Programı, tüm servis kayıtlarınızı, müşteri işlemlerinizi ve operasyonel süreçlerinizi her yerden güvenli ve hızlı bir şekilde yönetmenize olanak tanır. 
+      Güçlü özellikleri sayesinde servis süreçlerini, envanter takibini, fatura işlemlerini ve daha birçok işlemi kolayca kontrol edebilirsiniz.
+    </p>
+    <p class="intro-subdescription">
+    </p>
+  </div>
+</section>
+
+
+<div class="trial-section text-center my-4" data-aos="zoom-in" data-aos-delay="100" > <!-- " "data-aos="zoom-in" data-aos-delay="100" " hareketli animasyon için eklendi --> 
+  <h3 class="trial-title">Hemen 14 Gün Boyunca Ücretsiz Dene</h3>
+  <div class="button-group d-flex justify-content-center gap-3 mt-3">
+    <a href="TeknikServisBilsoftSetup (1).exe" download class="btn btn-download" title="Demo Kullan">Programı İndir</a>
+    <a href="https://servis.bilsoft.com/Home/LoginYeni" target="_blank" class="btn btn-web" title="Web Paneli">Web Paneli</a>
+  </div>
+</div>
+
+
+<!--Sık Sorulan Sorular (SSS) Kodları-->
+<div class="faq-section" data-aos="zoom-in" data-aos-delay="100" > <!-- " "data-aos="zoom-in" data-aos-delay="100" " hareketli animasyon için eklendi --> 
+  <h3 class="faq-title">Sık Sorulan Sorular (SSS)</h3>
+
+<div class="faq-item">
+  <button class="faq-button">
+    Bilsoft Bulut Hibrit Teknik Servis Programı Bilsoft Ön Muhasebe Programı ile entegre çalışır mı ?
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Bilsoft Bulut Hibrit Teknik Servis Programı, Bilsoft Ön Muhasebe Programı ile tam bir entegrasyon içinde çalışır. Bu entegrasyon, muhasebe programınızdaki stok ve cari hesap bilgilerini teknik servis modülünde sorunsuz bir şekilde görüntülemenize olanak tanır.  </div>
+  </div>
+
+
+  <div class="faq-item">
+  <button class="faq-button">
+    Servis Fişi ve Ürün Kabul Formu Oluşturabilir miyim ?
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Her servis kaydı için detaylı ürün kabul formu ve servis fişi oluşturabilirsiniz. Bu formlarda ürün bilgileri, müşteri talepleri, arıza açıklamaları ve işlem detayları yer alır.  </div>
+  </div>
+
+
+  <div class="faq-item">
+  <button class="faq-button">
+    Müşterilere Servis Durumu Hakkında Bilgilendirme Yapabilir miyim ?
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Sistem üzerinden müşterilere SMS veya e-posta ile servis durumu hakkında bilgilendirme gönderilebilir. Online Takip sistemi ile kullanıcılarınız ürün durumunu anlık takip edebilir.  </div>
+  </div>
+
+
+  <div class="faq-item">
+  <button class="faq-button">
+    Servis Kayıtlarına Personel Ataması Yapılabilir mi?
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Her servis işlemi için sorumlu personel atanabilir. Böylece işlem takibi kolaylaşır ve personel performansı izlenebilir hale gelir.  </div>
+  </div>
+
+
+  <div class="faq-item">
+  <button class="faq-button">
+    Bilsoft Teknik Servis Programı Hangi Sektörlere Uygundur ?
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Program; elektronik, beyaz eşya, bilgisayar, cep telefonu, güvenlik sistemleri, medikal cihazlar ve teknik servis hizmeti veren tüm sektörler için uygundur. Modüler yapısı sayesinde ihtiyaçlara göre uyarlanabilir.
+  </div>
+  </div>
+
+
+  <div class="faq-item">
+  <button class="faq-button">
+    Bilsoft Teknik Servis Programındaki kullanıcıları yetkilendirebilir miyim?
+    <span class="icon">+</span>
+  </button>
+  <div class="faq-answer">
+    Evet, Bilsoft Teknik Servis Programında kullanıcıları yetkilendirebilirsiniz. Program, çeşitli kullanıcı rolleri ve yetkilendirmeleri ayarlama imkanı sunar, böylece farklı kullanıcıların sisteme erişim düzeylerini ve hangi işlevleri gerçekleştirebileceklerini özelleştirebilirsiniz. Bu yetkilendirme sistemi, işletmenizin ihtiyaçlarına göre yapılandırılabilir ve bu sayede veri güvenliği ile iş akışınızın etkin bir şekilde yönetebilirsiniz.
+  </div>
+  </div>
+</div>
+
+
+<!--Footer Kodları-->
+  <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Bilsoft Tanıtım + Sosyal Medya -->
+      <div class="footer-column">
+        <h3>Bilsoft Bulut Teknik Servis</h3>
+        <p>
+          Bulut Teknik Servis hizmeti veren firmaların gereksinimlerini karşılayabilecek düzeyde geliştirilmiş,
+          servis kayıtlarını ve opsiyonel olarak işletme muhasebenizi de tutabileceğiniz bulut/internet tabanlı bir programdır.
+        </p>
+        <div class="social-icons">
+          <a href="https://x.com/bilsoftyzlm" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i> <!--İkonları yukarıda tanımladığımız "Font Awesome İkonlar"ından çektik-->
+          </a>
+          <a href="http://facebook.com/BilsoftYazilim/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/bilsoftyazilim/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://tr.linkedin.com/company/bilsoftyazilim" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      
+       <!-- Sayfalar -->
+    <div class="footer-column">
+      <h3>Sayfalar</h3>
+      <ul>
+       <li> <a href="index.html">Anasayfa</a></li>
+       <li> <a href="özellikler.html">Özellikler</a></li>
+       <li> <a href="iletişim.html">İletişim</a></li>
+       <li> <a href="hakkımızda.html">Hakkımızda</a></li>
+    </ul>
+    </div>
+
+      
+      <!-- İletişim -->
+      <div class="footer-column">
+        <h3>İletişim</h3>
+        <p>Hafta İçi<br>09:00 - 17:30</p>
+        <p>Cumartesi<br>09:00 - 16:30</p>
+        <p>
+          <a href="tel:02129122426" style="text-decoration: none; color: inherit;">
+            <i class="fa-solid fa-phone"></i> <strong>(0212) 912 24 26</strong> <!--İkonu yukarıda tanımladığımız "Font Awesome İkonlar"ından çektik-->
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+<!-- Yukarı Çık Butonu --> <!--Sayfa aşağı doğru inince ortaya çıkan minik ok -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Yukarı Çık">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+
+<!-- AOS Kütüphanesi --> <!-- Sayfa içindekilerin animasyonlu bir şekilde hareket edebilmesi için --> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script src="js/slider.js"></script>
+</body>
+</html>
